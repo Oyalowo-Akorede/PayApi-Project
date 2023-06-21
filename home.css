@@ -1,0 +1,259 @@
+/* Root section */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.hide {
+  display: none;
+}
+
+.dsk {
+  display: none;
+}
+
+.regbtn {
+  display: none;
+}
+
+.hide-menu-on-mobile {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Link-Water-White: #fbfcfe;
+  --dark-pink: #ba4270;
+  --Charm-Pink: #da6d97;
+  --Light-San-Juan-Blue: #6c8294;
+  --San-Juan-Blue: #36536b;
+  --Mirage-Blue: #1b262f;
+}
+
+/* Default Styles */
+
+.btn {
+  padding: 16px 24.5px;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  background-color: var(--dark-pink);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 24px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+body {
+  background: #edf3f8;
+  background-image: url(./assets/home/Mobile/Mobile\ -\ Home.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero2 {
+  border: solid 1px var(--Link-Water-White);
+  padding: 16px 24.5px;
+  border-radius: 24px;
+  color: var(--San-Juan-Blue);
+  display: flex;
+  justify-content: center;
+  background-color: var(--Link-Water-White);
+  width: 100%;
+  margin-bottom: 16px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+/* Header section */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 24px;
+  margin-top: 41px;
+}
+
+.hero-section {
+  margin-inline: 24px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 155px;
+}
+
+.sing-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+
+.hero1 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: var(--San-Juan-Blue);
+  margin: 24px;
+  /* width:327px; */
+}
+
+.hero4 {
+  font-family: "Public Sans";
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--Light-San-Juan-Blue);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 79px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tablet Screen */
+@media (min-width: 700px) {
+  /* Nav Bar style */
+  .show-menu-on-dsktp {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .nav-items-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .nav-items-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--San-Juan-Blue);
+    gap: 40px;
+  }
+
+  .btn {
+    padding: 16px 24.5px;
+    border-radius: 24px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: var(--dark-pink);
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Background*/
+  body {
+    background-image: url(./assets/home/Tabllet/Tablet\ -\ Home.svg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+  }
+
+  /* .reg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+  } */
+
+  /* 
+  #hero2 {
+    border-radius: 24px 0px 0px 24px;
+  } */
+
+  /* .regbtn{
+    display: inline;
+    position: absolute;
+    top: -1px;
+    left: 437px;
+    width: fit-content;
+    color: aqua;
+  } */
+
+  .hero1 {
+    /* display: flex; */
+    /* width: 573px; */
+    /* height: 122px; */
+    /* flex-direction: column; */
+    /* flex-shrink: 0; */
+    /* color: #36536b; */
+    text-align: center;
+    font-size: 48px;
+    font-family: DM Serif Display;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 1050px) {
+  /* Nav Bar style */
+
+  /* .btn {
+    padding: 16px 24.5px;
+    border-radius: 24px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: var(--dark-pink);
+    display: flex;
+    justify-content: center;
+  } */
+
+  .sing-phone {
+    display: none;
+  }
+
+  .hero-section {
+    margin-inline: 24px;
+    padding-inline: 104px;
+  }
+
+  .dsk {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 85px;
+  }
+
+  /* Background*/
+  body {
+    background-image: url(./assets/home/Desktop/Desktop\ -\ Home.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero1 {
+    width: auto;
+    line-height: 72px;
+    font-size: 72px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
