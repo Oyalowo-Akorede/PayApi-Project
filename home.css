@@ -52,7 +52,7 @@ body {
   background: #edf3f8;
   background-image: url(./assets/home/Mobile/Mobile\ -\ Home.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 #hero2 {
@@ -122,9 +122,62 @@ body {
   align-items: center;
 }
 
-.dsk-partners{
-  display:none;
+/* Partners Section */
+
+.dsk-partners {
+  display: none;
 }
+
+#Partners-Section {
+  background-image: url(./assets/home/Mobile/Bg-Partners.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 670px;
+  gap: 57px;
+}
+
+.partners-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.partners-article>h1 {
+  color: var(--Link-Water-White);
+  font-size: 32px;
+  font-family: DM Serif Display;
+  line-height: 36px;
+  font-weight: 200;
+}
+
+.partners-article>p {
+  color: var(--Link-Water-White);
+  text-align: center;
+  font-size: 15px;
+  font-family: Public Sans;
+  line-height: 28px;
+  width: 327px;
+}
+
+.partners-btn {
+  width: 129px;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid var(--Link-Water-White);
+  text-align: center;
+  font-size: 15px;
+  font-family: Public Sans;
+  font-weight: 700;
+}
+
 
 /* Tablet Screen */
 @media (min-width: 700px) {
@@ -164,12 +217,14 @@ body {
     display: flex;
     justify-content: center;
   }
+  /* Fix Problem with BTn */
 
   /* Background*/
   body {
     background-image: url(./assets/home/Tabllet/Tablet\ -\ Home.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    background-size: contain;
   }
 
   .hero1 {
@@ -180,10 +235,54 @@ body {
     letter-spacing: -0.369px;
   }
 
-  .mob-partners{
+  .mob-partners {
     display: none;
   }
-  .dsk-partners
+
+  .dsk-partners {
+    display: flex;
+  }
+
+  #Partners-Section {
+    background-image: url(./assets/home/Tabllet/Bg-Partners.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 670px;
+    gap: 57px;
+  }
+
+  .partners-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .partners-article>h1 {
+    color: var(--Link-Water-White);
+    text-align: center;
+    font-size: 48px;
+    font-family: DM Serif Display;
+    line-height: 56px;
+    font-weight: 200;
+  }
+
+  .partners-article>p {
+    color: var(--Link-Water-White);
+    text-align: center;
+    font-size: 15px;
+    font-family: Public Sans;
+    line-height: 28px;
+    width: 456px;
+  }
+
 }
 
 /* Larger Screens */
@@ -211,7 +310,7 @@ body {
     background-image: url(./assets/home/Desktop/Desktop\ -\ Home.svg);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   .hero1 {
@@ -225,4 +324,44 @@ body {
     flex-direction: row-reverse;
     align-items: center;
   }
+
+  #Partners-Section {
+    background-image: url(./assets/home/Desktop/Bg-Partners.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 472px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .partners-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .partners-article>h1 {
+    color: var(--Link-Water-White);
+    font-size: 48px;
+    font-family: DM Serif Display;
+    line-height: 56px;
+    font-weight: 200;
+  }
+
+  .partners-article>p {
+    display: flex;
+    width: 445px;
+    text-align:left;
+    color: #FBFCFE;
+    font-size: 15px;
+    font-family: Public Sans;
+    line-height: 28px;
+  }
+
 }
