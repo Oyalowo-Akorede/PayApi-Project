@@ -180,6 +180,15 @@ body {
 
 /* FEATS. SECTION */
 
+#Feats-Section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+
 .feats1 {
   display: flex;
   flex-direction: column;
@@ -197,7 +206,7 @@ body {
 }
 
 .feats-article1>h1 {
-  color: #36536B;
+  color: var(--San-Juan-Blue);
   text-align: center;
   font-size: 36px;
   font-family: DM Serif Display;
@@ -221,13 +230,67 @@ body {
   align-items: center;
 }
 
+.feats-article2 {
+  display: flex;
+  width: 328px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.feats-article2>h1 {
+  color: var(--San-Juan-Blue);
+  text-align: center;
+  font-size: 36px;
+  font-family: DM Serif Display;
+  line-height: 36px;
+  letter-spacing: -0.277px;
+  font-weight: 300;
+}
+
+.feats-article2>p {
+  color: var(--Light-San-Juan-Blue);
+  text-align: center;
+  font-size: 15px;
+  font-family: Public Sans;
+  line-height: 28px;
+}
+
+
 .feats3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
+.feats3>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feats-articles>p {
+  color:var(--San-Juan-Blue);
+  text-align: center;
+  font-size: 15px;
+  font-family: Public Sans;
+  line-height: 25px;
+  letter-spacing: -0.115px;
+}
+
+h2 {
+  color: var(--San-Juan-Blue);
+  text-align: center;
+  font-size: 18px;
+  font-family: Public Sans;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.138px;
+}
 
 
 /* Tablet Screen */
